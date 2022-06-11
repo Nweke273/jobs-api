@@ -24,9 +24,6 @@ app.use(express.json());
 app.use("/api/v1/auth", authRoute);
 app.use("/api/v1/jobs", userAuthentication, jobsRoute);
 
-app.use(notFoundMiddleware);
-app.use(errorHandlerMiddleware);
-
 const port = process.env.PORT || 5000;
 
 app.set("trust proxy", 1);
@@ -44,6 +41,9 @@ app.use(xss());
 app.get("/", (req, res) => {
   res.send("Api");
 });
+
+app.use(notFoundMiddleware);
+app.use(errorHandlerMiddleware);
 
 const start = async () => {
   try {
