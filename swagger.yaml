@@ -21,8 +21,8 @@ paths:
             schema:
               $ref: "#/components/schemas/RegisterUserRequest"
             example:
-              name: Smart Gap
-              email: smartgap@gmail.com
+              name:  showcasery 
+              email: showcasery@example.com
               password: password
         required: true
       responses:
@@ -82,7 +82,7 @@ paths:
               $ref: "#/components/schemas/CreateJobRequest"
             example:
               company: Smart Gap LTD
-        position: FullStack Software Developer
+              position: FullStack Software Developer
         required: true
       responses:
         "200":
@@ -127,7 +127,7 @@ paths:
               $ref: "#/components/schemas/UpdateJobRequest"
             example:
               company: Smart Gap LTD
-        position: FullStack Software Developer
+              position: FullStack Software Developer
         required: true
       responses:
         "200":
