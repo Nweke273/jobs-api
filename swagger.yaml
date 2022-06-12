@@ -21,8 +21,8 @@ paths:
             schema:
               $ref: "#/components/schemas/RegisterUserRequest"
             example:
-              name: Godwin
-              email: gkalu@gmail.com
+              name: Smart Gap
+              email: smartgap@gmail.com
               password: password
         required: true
       responses:
@@ -45,7 +45,7 @@ paths:
             schema:
               $ref: "#/components/schemas/LoginUserRequest"
             example:
-              email: mary7@gmail.com
+              email: smartgap@gmail.com
               password: password
         required: true
       responses:
@@ -81,8 +81,8 @@ paths:
             schema:
               $ref: "#/components/schemas/CreateJobRequest"
             example:
-              company: Cool cool job
-              position: Sweepera
+              company: Smart Gap LTD
+        position: FullStack Software Developer
         required: true
       responses:
         "200":
@@ -126,8 +126,8 @@ paths:
             schema:
               $ref: "#/components/schemas/UpdateJobRequest"
             example:
-              company: Smart Gap
-              position: Front end developer
+              company: Smart Gap LTD
+        position: FullStack Software Developer
         required: true
       responses:
         "200":
@@ -167,8 +167,8 @@ components:
         password:
           type: string
       example:
-        name: Godwin
-        email: gkalu@gmail.com
+        name: Smart Gap
+        email: smartgap@gmail.com
         password: password
     LoginUserRequest:
       title: LoginUserRequest
@@ -182,7 +182,7 @@ components:
         password:
           type: string
       example:
-        email: mary7@gmail.com
+        email: smartgap@gmail.com
         password: password
     CreateJobRequest:
       title: CreateJobRequest
@@ -196,8 +196,8 @@ components:
         position:
           type: string
       example:
-        company: Cool cool job
-        position: Sweepera
+        company: Smart Gap LTD
+        position: FullStack Software Developer
     UpdateJobRequest:
       title: UpdateJobRequest
       required:
@@ -210,8 +210,8 @@ components:
         position:
           type: string
       example:
-        company: Smart Gap
-        position: Front end developer
+        company: Smart Gap LTD
+        position: FullStack Software Developer
   securitySchemes:
     bearer:
       type: http
