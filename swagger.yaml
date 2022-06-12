@@ -45,7 +45,7 @@ paths:
             schema:
               $ref: "#/components/schemas/LoginUserRequest"
             example:
-              email: smartgap@gmail.com
+              email: showcasery@example.com
               password: password
         required: true
       responses:
